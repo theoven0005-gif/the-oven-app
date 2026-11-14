@@ -1,0 +1,33 @@
+name: Extract uploaded code
+on:
+  push:
+    paths:
+      - 'code.zip'
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Extract code.zip
+        run: |
+          if [ -f code.zip ]; then
+            unzip -o code.zip
+            rm code.zip
+          else
+            echo "code.zip not present, nothing to extract."
+          fi
+      - name: Commit extracted files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Extract uploaded code"
+            git push
+          fi
