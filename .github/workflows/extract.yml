@@ -6,7 +6,6 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
-  workflows: write
 jobs:
   extract:
     runs-on: ubuntu-latest
@@ -17,8 +16,9 @@ jobs:
       - name: Extract code.zip
         run: |
           if [ -f code.zip ]; then
-            unzip -o code.zip
+            unzip -o code.zip -x '.github/workflows/*'
             rm code.zip
+            rm -f .github/workflows/deploy.yml .github/workflows/build-apk.yml
           else
             echo "code.zip not present, nothing to extract."
           fi
