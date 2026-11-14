@@ -38,8 +38,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="12dp"
             app:boxBackgroundColor="@color/warm_white"
-            app:boxCornerFamily="rounded"
-            app:boxCornerRadii="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp"
             app:boxStrokeWidth="0dp"
             app:startIconDrawable="@android:drawable/ic_menu_search"
             app:hintEnabled="false">
