@@ -3,8 +3,10 @@ on:
   push:
     paths:
       - 'code.zip'
+  workflow_dispatch:
 permissions:
   contents: write
+  workflows: write
 jobs:
   extract:
     runs-on: ubuntu-latest
