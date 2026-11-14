@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Brand Colors - warm appetizing palette matching the restaurant flyers -->
+    <color name="mint_teal">#0E7C6B</color>
+    <color name="mint_teal_light">#E2F1ED</color>
+    <color name="mint_teal_dark">#0A5C4E</color>
+
+    <color name="crimson_red">#D62828</color>
+    <color name="crimson_red_light">#FDECEB</color>
+
+    <color name="appetizing_orange">#F4A259</color>
+    <color name="golden">#E9C46A</color>
+
+    <color name="charcoal_black">#23211E</color>
+    <color name="text_gray">#75706A</color>
+    <color name="warm_white">#FFFBF4</color>
+    <color name="divider_color">#F0E9DF</color>
+
+    <!-- Material Theme Overrides - STOP PURPLE -->
+    <color name="colorPrimary">#0E7C6B</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#D62828</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#23211E</color>
+</resources>

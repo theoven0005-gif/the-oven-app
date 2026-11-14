@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warm_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".TrackerActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="Order Tracker"
+        app:titleTextColor="@color/charcoal_black" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieCooking"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/cooking_animation" />
+
+    <TextView
+        android:id="@+id/tvOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Order #OVN-4921"
+        android:textColor="@color/charcoal_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvStatusTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Preparing in The Oven"
+        android:textColor="@color/mint_teal"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <!-- Progress Stepper -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/step1_dot"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_mint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/step1_dot"
+                android:text="Order Confirmed"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/step1_dot"
+                android:layout_centerHorizontal="false"
+                android:layout_marginStart="11dp"
+                android:background="@color/mint_teal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <View
+                android:id="@+id/step2_dot"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_mint" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/step2_dot"
+                android:text="Preparing in The Oven"
+                android:textStyle="bold"
+                android:textColor="@color/mint_teal" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/step2_dot"
+                android:layout_centerHorizontal="false"
+                android:layout_marginStart="11dp"
+                android:background="#DDDDDD" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <View
+                android:id="@+id/step3_dot"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/circle_gray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_toEndOf="@id/step3_dot"
+                android:text="Out for Delivery / Ready" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBackHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:text="Back to Home"
+        app:cornerRadius="12dp"
+        android:backgroundTint="@color/charcoal_black" />
+
+</LinearLayout>

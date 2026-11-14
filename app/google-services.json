@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "973819527939",
+    "project_id": "the-oven-7d3ec",
+    "storage_bucket": "the-oven-7d3ec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:973819527939:android:4f8b5ff76088e0ac70df36",
+        "android_client_info": {
+          "package_name": "com.example.theoven"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHBHRb_w9Wtop3kaMdczL5KtKxbzOl7qE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

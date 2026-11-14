@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">The Oven</string>
+    <string name="deliver_to">Deliver to</string>
+    <string name="address_mian_channu">Shaheed Road, Mian Channu</string>
+    <string name="search_hint">Search pizza, burger, pasta...</string>
+    <string name="delivery">Delivery</string>
+    <string name="pickup">Pick Up</string>
+    <string name="categories_title">What\'s on your mind?</string>
+    <string name="see_all">See all</string>
+    <string name="hot_deals">Hot Deals 🔥</string>
+    <string name="recommended">Recommended for you</string>
+    <string name="view_cart">View Cart (%1$d items - Rs. %2$d)</string>
+    <string name="home_greeting">What would you like\nto order today?</string>
+    <string name="special_deals">Today\'s Special Deals</string>
+    <string name="popular_items">Popular Items</string>
+
+    <string name="good_morning">Good Morning! ☀️</string>
+    <string name="good_afternoon">Good Afternoon! 🍔</string>
+    <string name="good_evening">Good Evening! 🍕</string>
+    <string name="home_greeting_format">%1$s\nWhat would you like to order?</string>
+    <string name="open_now">OPEN NOW</string>
+    <string name="filter_bestsellers">Bestsellers</string>
+    <string name="filter_under_500">Under Rs. 500</string>
+    <string name="filter_spicy">Spicy 🔥</string>
+
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="sign_in_message">Sign in to your account to order delicious food from The Oven.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="phone_helper">Enter your 10-digit mobile number</string>
+    <string name="continue_with_phone">Continue with Phone</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="or_text">OR</string>
+
+    <string name="limited_time">Limited Time</string>
+    <string name="promo">PROMO</string>
+    <string name="oven_special">The Oven Special</string>
+</resources>
