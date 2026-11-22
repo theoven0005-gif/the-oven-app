@@ -101,9 +101,9 @@ object FirestoreMenuRepository {
      * contains-based match (either direction); unknown categories fall back
      * to the first category.
      *
-     * NOTE: [Product.imageRes] is a local drawable — a remote
-     * [RemoteMenuItem.imageUrl] needs an image-loading library (e.g. Coil)
-     * to display. Until that is added, a placeholder drawable is used.
+     * The photo is picked from the generated food assets by item name
+     * via [MenuRepository.imageFor], so Firestore-seeded items show the
+     * right dish instead of one shared placeholder.
      */
     fun RemoteMenuItem.toProduct(): Product {
         val wanted = category.trim().lowercase()
@@ -118,7 +118,7 @@ object FirestoreMenuRepository {
             price = price,
             priceLabel = "Standard",
             categoryId = categoryId,
-            imageRes = R.drawable.ic_pizza_real,
+            imageRes = MenuRepository.imageFor(name, category),
             menuItemId = id.hashCode(),
             isFeatured = featured
         )

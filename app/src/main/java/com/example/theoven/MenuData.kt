@@ -18,25 +18,25 @@ data class Banner(val id: Int, val imageRes: Int)
 
 object MenuData {
 
-    // Promo banners use the real restaurant flyers
+    // Promo banners use freshly generated food photography (not the flyers)
     val banners = listOf(
-        Banner(1, R.drawable.menu_flyer_3),
-        Banner(2, R.drawable.menu_flyer_4),
-        Banner(3, R.drawable.menu_flyer_1),
-        Banner(4, R.drawable.menu_flyer_2)
+        Banner(1, R.drawable.banner_party_deal),
+        Banner(2, R.drawable.banner_zinger_deal),
+        Banner(3, R.drawable.banner_pizza_royalty),
+        Banner(4, R.drawable.banner_drinks)
     )
 
     val categories = listOf(
-        Category(1, "Royalties Pizza", R.drawable.ic_pizza_real, FoodCategory.ROYALTY_PIZZA),
-        Category(2, "Burgers & More", R.drawable.ic_burger_real, FoodCategory.BURGERS),
-        Category(3, "Wraps & Sandwiches", R.drawable.ic_burger, FoodCategory.WRAPS_SANDWICHES),
-        Category(4, "Shawarma", R.drawable.ic_bbq, FoodCategory.SHAWARMA),
-        Category(5, "Fries & Sides", R.drawable.pizza_fries, FoodCategory.FRIES_SIDES),
-        Category(6, "Wings", R.drawable.bbq_placeholder, FoodCategory.WINGS),
-        Category(7, "Coffee & Chai", R.drawable.banner_1, FoodCategory.COFFEE),
-        Category(8, "Drinks Bar", R.drawable.banner_2, FoodCategory.DRINKS_BAR),
-        Category(9, "Bottled Drinks", R.drawable.banner_2, FoodCategory.BOTTLED_DRINKS),
-        Category(10, "Ice Cream", R.drawable.banner_1, FoodCategory.ICE_CREAM)
+        Category(1, "Royalties Pizza", R.drawable.img_emperor_pizza, FoodCategory.ROYALTY_PIZZA),
+        Category(2, "Burgers & More", R.drawable.img_zinger_burger, FoodCategory.BURGERS),
+        Category(3, "Wraps & Sandwiches", R.drawable.img_grill_wrap, FoodCategory.WRAPS_SANDWICHES),
+        Category(4, "Shawarma", R.drawable.img_shawarma_platter, FoodCategory.SHAWARMA),
+        Category(5, "Fries & Sides", R.drawable.img_loaded_fries, FoodCategory.FRIES_SIDES),
+        Category(6, "Wings", R.drawable.img_hot_wings, FoodCategory.WINGS),
+        Category(7, "Coffee & Chai", R.drawable.img_cappuccino, FoodCategory.COFFEE),
+        Category(8, "Drinks Bar", R.drawable.img_blue_lagoon, FoodCategory.DRINKS_BAR),
+        Category(9, "Bottled Drinks", R.drawable.img_bottled_drink, FoodCategory.BOTTLED_DRINKS),
+        Category(10, "Ice Cream", R.drawable.img_ice_cream, FoodCategory.ICE_CREAM)
     )
 
     private val featuredIds = setOf(5, 13, 15, 20, 40, 8, 22)
